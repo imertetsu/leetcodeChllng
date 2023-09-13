@@ -1,7 +1,5 @@
-import EasyPractices.MergeArrays;
-import EasyPractices.RemoveDuplicates;
-import EasyPractices.RemoveDuplicatesII;
-import EasyPractices.RemoveElement;
+import EasyPractices.MajorityElement;
+import MediumPractices.RemoveDuplicatesII;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,5 +27,9 @@ public class Main {
         RemoveDuplicatesII removeDuplicates2 = new RemoveDuplicatesII();
         int[] duplicates2 = {1,2};
         removeDuplicates2.removeDuplicates(duplicates2);
+
+        MajorityElement majorityElement = new MajorityElement();
+        int[] elements = {2,2,1,1,1,2,2};
+        majorityElement.majorityElement(elements);
     }
 }

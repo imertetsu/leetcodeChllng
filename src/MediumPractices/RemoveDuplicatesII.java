@@ -1,4 +1,4 @@
-package EasyPractices;
+package MediumPractices;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +9,6 @@ public class RemoveDuplicatesII {
         int count = 0;
         ArrayList<Integer> list = new ArrayList<>();
         for(int num: nums){
-
             if(!list.contains(num)){
                 count = 0;
                 list.add(num);
