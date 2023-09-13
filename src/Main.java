@@ -1,4 +1,5 @@
 import EasyPractices.MergeArrays;
+import EasyPractices.RemoveDuplicates;
 import EasyPractices.RemoveElement;
 
 public class Main {
@@ -19,5 +20,9 @@ public class Main {
         RemoveElement removeElement = new RemoveElement();
         int[] nums = {0,1,2,2,3,0,4,2};
         removeElement.removeElement(nums, 2);
+        //--------------------------------------------------
+        RemoveDuplicates removeDuplicates = new RemoveDuplicates();
+        int[] duplicates = {0,0,1,1,1,2,2,3,3,4};
+        removeDuplicates.removeDuplicates(duplicates);
     }
 }
