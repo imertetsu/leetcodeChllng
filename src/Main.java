@@ -1,5 +1,6 @@
 import EasyPractices.MergeArrays;
 import EasyPractices.RemoveDuplicates;
+import EasyPractices.RemoveDuplicatesII;
 import EasyPractices.RemoveElement;
 
 public class Main {
@@ -17,12 +18,16 @@ public class Main {
         mergeArrays2.merge(nums3, 0, nums4, 1);*/
         //-------------------------------------------
 
-        RemoveElement removeElement = new RemoveElement();
+        /*RemoveElement removeElement = new RemoveElement();
         int[] nums = {0,1,2,2,3,0,4,2};
-        removeElement.removeElement(nums, 2);
+        removeElement.removeElement(nums, 2);*/
         //--------------------------------------------------
-        RemoveDuplicates removeDuplicates = new RemoveDuplicates();
+        /*RemoveDuplicates removeDuplicates = new RemoveDuplicates();
         int[] duplicates = {0,0,1,1,1,2,2,3,3,4};
-        removeDuplicates.removeDuplicates(duplicates);
+        removeDuplicates.removeDuplicates(duplicates);*/
+        //----------------------------------------------------
+        RemoveDuplicatesII removeDuplicates2 = new RemoveDuplicatesII();
+        int[] duplicates2 = {1,2};
+        removeDuplicates2.removeDuplicates(duplicates2);
     }
 }
