@@ -1,5 +1,6 @@
 import EasyPractices.MajorityElement;
 import MediumPractices.RemoveDuplicatesII;
+import MediumPractices.RotateArray;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,9 +28,13 @@ public class Main {
         RemoveDuplicatesII removeDuplicates2 = new RemoveDuplicatesII();
         int[] duplicates2 = {1,2};
         removeDuplicates2.removeDuplicates(duplicates2);
-
+        //----------------------------------------------------
         MajorityElement majorityElement = new MajorityElement();
         int[] elements = {2,2,1,1,1,2,2};
         majorityElement.majorityElement(elements);
+        //----------------------------------------------------
+        RotateArray rotateArray = new RotateArray();
+        int[] arrayToRotate = {1,2,3,4,5,6,7};
+        rotateArray.rotate(arrayToRotate, 12);
     }
 }
