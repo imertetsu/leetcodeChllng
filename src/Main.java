@@ -1,3 +1,4 @@
+import EasyPractices.BestTimeToBuyAndSellStock;
 import EasyPractices.MajorityElement;
 import MediumPractices.RemoveDuplicatesII;
 import MediumPractices.RotateArray;
@@ -25,7 +26,7 @@ public class Main {
         int[] duplicates = {0,0,1,1,1,2,2,3,3,4};
         removeDuplicates.removeDuplicates(duplicates);*/
         //----------------------------------------------------
-        RemoveDuplicatesII removeDuplicates2 = new RemoveDuplicatesII();
+        /*RemoveDuplicatesII removeDuplicates2 = new RemoveDuplicatesII();
         int[] duplicates2 = {1,2};
         removeDuplicates2.removeDuplicates(duplicates2);
         //----------------------------------------------------
@@ -35,6 +36,11 @@ public class Main {
         //----------------------------------------------------
         RotateArray rotateArray = new RotateArray();
         int[] arrayToRotate = {1,2,3,4,5,6,7};
-        rotateArray.rotate(arrayToRotate, 12);
+        rotateArray.rotate(arrayToRotate, 12);*/
+
+        //----------------------------------------------------
+        BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock();
+        int[] pricesArray = {7,1,5,3,6,4};
+        bestTimeToBuyAndSellStock.maxProfit(pricesArray);
     }
 }
