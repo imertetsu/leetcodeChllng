@@ -1,7 +1,6 @@
 import EasyPractices.BestTimeToBuyAndSellStock;
-import EasyPractices.MajorityElement;
-import MediumPractices.RemoveDuplicatesII;
-import MediumPractices.RotateArray;
+import EasyPractices.Recursividad;
+import MediumPractices.BestTimeToBuyAndSellStockII;
 
 public class Main {
     public static void main(String[] args) {
@@ -42,5 +41,14 @@ public class Main {
         BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock();
         int[] pricesArray = {7,1,5,3,6,4};
         bestTimeToBuyAndSellStock.maxProfit(pricesArray);
+
+        Recursividad factorial = new Recursividad();
+        System.out.println(factorial.fibonacciFrom(8));
+
+        BestTimeToBuyAndSellStockII bestTimeToBuyAndSellStockII = new BestTimeToBuyAndSellStockII();
+        int[] pricesA = {6,5,4,3,2,1};
+        int[] tricky = {2,1,2,0,1};
+        int[] tricky2 = {2,4,1};
+        System.out.println(bestTimeToBuyAndSellStockII.maxProfit(tricky2));
     }
 }
