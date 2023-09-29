@@ -1,7 +1,9 @@
 import EasyPractices.BestTimeToBuyAndSellStock;
 import EasyPractices.Recursividad;
 import MediumPractices.BestTimeToBuyAndSellStockII;
+import MediumPractices.HIndex;
 import MediumPractices.JumpGame;
+import MediumPractices.JumpGameII;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,7 +41,7 @@ public class Main {
         rotateArray.rotate(arrayToRotate, 12);*/
 
         //----------------------------------------------------
-        BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock();
+        /*BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock();
         int[] pricesArray = {7,1,5,3,6,4};
         bestTimeToBuyAndSellStock.maxProfit(pricesArray);
 
@@ -55,5 +57,12 @@ public class Main {
         JumpGame jumpGame = new JumpGame();
         int[] tricky = {1,2,3};
         System.out.println("Bool"+ jumpGame.canJump(tricky));
+
+        JumpGameII jumpGameII = new JumpGameII();
+        int[] arr = {3,2,1};
+        System.out.println("JUMPS "+ jumpGameII.jump(arr));*/
+        HIndex hIndex = new HIndex();
+        int[] arr = {3,1,1};
+        System.out.println(hIndex.hIndex(arr));
     }
 }
