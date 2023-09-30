@@ -1,9 +1,6 @@
 import EasyPractices.BestTimeToBuyAndSellStock;
 import EasyPractices.Recursividad;
-import MediumPractices.BestTimeToBuyAndSellStockII;
-import MediumPractices.HIndex;
-import MediumPractices.JumpGame;
-import MediumPractices.JumpGameII;
+import MediumPractices.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -64,5 +61,15 @@ public class Main {
         HIndex hIndex = new HIndex();
         int[] arr = {3,1,1};
         System.out.println(hIndex.hIndex(arr));
+
+        InsertDeleteGetRandomO1 insertDeleteGetRandomO1 = new InsertDeleteGetRandomO1();
+        insertDeleteGetRandomO1.insert(1);
+        insertDeleteGetRandomO1.remove(2);
+        insertDeleteGetRandomO1.insert(2);
+        insertDeleteGetRandomO1.getRandom();
+        insertDeleteGetRandomO1.remove(1);
+        insertDeleteGetRandomO1.insert(2);
+        insertDeleteGetRandomO1.getRandom();
+
     }
 }
