@@ -58,7 +58,8 @@ public class Main {
         JumpGameII jumpGameII = new JumpGameII();
         int[] arr = {3,2,1};
         System.out.println("JUMPS "+ jumpGameII.jump(arr));*/
-        HIndex hIndex = new HIndex();
+
+        /*HIndex hIndex = new HIndex();
         int[] arr = {3,1,1};
         System.out.println(hIndex.hIndex(arr));
 
@@ -69,7 +70,10 @@ public class Main {
         insertDeleteGetRandomO1.getRandom();
         insertDeleteGetRandomO1.remove(1);
         insertDeleteGetRandomO1.insert(2);
-        insertDeleteGetRandomO1.getRandom();
+        insertDeleteGetRandomO1.getRandom();*/
+        ProductArrayExceptSelf productArrayExceptSelf =  new ProductArrayExceptSelf();
+        int[] arr = {-1,2,3,4};
+        productArrayExceptSelf.productExceptSelf(arr);
 
     }
 }
