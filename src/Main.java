@@ -71,9 +71,12 @@ public class Main {
         insertDeleteGetRandomO1.remove(1);
         insertDeleteGetRandomO1.insert(2);
         insertDeleteGetRandomO1.getRandom();*/
-        ProductArrayExceptSelf productArrayExceptSelf =  new ProductArrayExceptSelf();
+        /*ProductArrayExceptSelf productArrayExceptSelf =  new ProductArrayExceptSelf();
         int[] arr = {-1,2,3,4};
-        productArrayExceptSelf.productExceptSelf(arr);
-
+        productArrayExceptSelf.productExceptSelf(arr);*/
+        GasStation gasStation = new GasStation();
+        int[] gast = {1,2,3,4,5};
+        int[] cost = {3,4,5,1,2};
+        gasStation.canCompleteCircuit(gast, cost);
     }
 }

@@ -4,25 +4,20 @@ public class GasStation {
     public int canCompleteCircuit(int[] gas, int[] cost) {
         int currentGas = 0;
         int currentIndex = 0;
+        int totalGas = 0;
         for(int i = 0; i < gas.length; i++){
-            if(gas[i] <= cost[i]){
-                continue;
-            }
-            currentIndex = i;
-            if(i < gas.length - 1){
-                currentGas = currentGas + gas[i+1];
-                currentGas = currentGas - cost[i] + gas[i];
-
-            }else {
-                currentGas = currentGas + gas[0];
-                currentGas = currentGas - cost[i] + gas[i];
-                i = 0;
-            }
-
-            if(currentIndex == i){
-                break;
+            currentGas += gas[i] - cost[i];
+            totalGas += gas[i] - cost[i];
+            if(currentGas < 0){
+                currentGas = 0;
+                currentIndex = i+1;
             }
         }
-        return 0;
+        if (totalGas >= 0){
+            System.out.println(currentIndex);
+            return currentIndex;
+        }else {
+            return -1;
+        }
     }
 }
