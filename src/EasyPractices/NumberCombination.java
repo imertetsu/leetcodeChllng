@@ -8,7 +8,7 @@ public class NumberCombination {
     public NumberCombination(){
         result = new ArrayList<>();
     }
-    public List<int[]> combination(int[] numbers, int obj){
+    /*public List<int[]> combination(int[] numbers, int obj){
         List<Integer> combineList = new ArrayList<>();
         //Caso base
         if(obj == 0){
@@ -21,5 +21,5 @@ public class NumberCombination {
         int [] result;
 
         return result;
-    }
+    }*/
 }
