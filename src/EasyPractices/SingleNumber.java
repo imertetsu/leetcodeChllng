@@ -12,11 +12,13 @@ public class SingleNumber {
             return nums[0];
         }
         for (int i = 0; i < nums.length; i = i + 2){
+            if(i == nums.length -1){
+                return nums[i];
+            }
             if(nums[i] != nums[i+1]){
-                result =  nums[i];
+                return nums[i];
             }
         }
-        System.out.println(result);
         return result;
     }
 }
