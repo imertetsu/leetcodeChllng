@@ -1,5 +1,6 @@
 import EasyPractices.BestTimeToBuyAndSellStock;
 import EasyPractices.Recursividad;
+import EasyPractices.SingleNumber;
 import HardPractices.Candy;
 import MediumPractices.*;
 
@@ -80,8 +81,11 @@ public class Main {
         int[] cost = {3,4,5,1,2};
         gasStation.canCompleteCircuit(gast, cost);*/
 
-        Candy candy = new Candy();
+        /*Candy candy = new Candy();
         int[] rating = {1,3,2,2,1};
-        candy.candy(rating);
+        candy.candy(rating);*/
+        SingleNumber singleNumber = new SingleNumber();
+        int[] single = {4,1,2,1,2};
+        singleNumber.singleNumber(single);
     }
 }
