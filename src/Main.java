@@ -1,5 +1,6 @@
 import EasyPractices.BestTimeToBuyAndSellStock;
 import EasyPractices.Recursividad;
+import HardPractices.Candy;
 import MediumPractices.*;
 
 public class Main {
@@ -74,9 +75,13 @@ public class Main {
         /*ProductArrayExceptSelf productArrayExceptSelf =  new ProductArrayExceptSelf();
         int[] arr = {-1,2,3,4};
         productArrayExceptSelf.productExceptSelf(arr);*/
-        GasStation gasStation = new GasStation();
+        /*GasStation gasStation = new GasStation();
         int[] gast = {1,2,3,4,5};
         int[] cost = {3,4,5,1,2};
-        gasStation.canCompleteCircuit(gast, cost);
+        gasStation.canCompleteCircuit(gast, cost);*/
+
+        Candy candy = new Candy();
+        int[] rating = {1,3,2,2,1};
+        candy.candy(rating);
     }
 }
