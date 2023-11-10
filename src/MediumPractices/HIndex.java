@@ -6,7 +6,7 @@ import java.util.Collections;
 public class HIndex {
     public int hIndex(int[] citations) {
         int n = citations.length;
-        Arrays.sort(citations); //ordena asc de menor a mayor
+        Arrays.sort(citations);
 
         for (int i = 0; i < n / 2; i++) {
             int temp = citations[i];

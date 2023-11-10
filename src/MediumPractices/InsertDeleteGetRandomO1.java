@@ -7,7 +7,6 @@ public class InsertDeleteGetRandomO1 {
     //List<Integer> list;
     Map<Integer, Integer> hash;
     public InsertDeleteGetRandomO1(){
-        //list = new ArrayList<>();
         hash = new HashMap<>();
     }
 
@@ -17,7 +16,6 @@ public class InsertDeleteGetRandomO1 {
             System.out.println(hash.toString());
             return false;
         }
-        //list.add(val);
         System.out.println("SIZE: "+hash.size());
         hash.put(val, hash.size());
         System.out.println("TRUE");
@@ -32,7 +30,6 @@ public class InsertDeleteGetRandomO1 {
             return false;
         }
         int index = hash.get(val);
-        //list.remove(index);
         hash.remove(val);
         System.out.println("TRUE");
         System.out.println(hash.toString());
