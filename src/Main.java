@@ -1,3 +1,4 @@
+import Algorithms.BinarySearch;
 import EasyPractices.BestTimeToBuyAndSellStock;
 import EasyPractices.Recursividad;
 import EasyPractices.SingleNumber;
@@ -87,5 +88,9 @@ public class Main {
         SingleNumber singleNumber = new SingleNumber();
         int[] single = {4,1,2,1,2};
         singleNumber.singleNumber(single);
+
+        BinarySearch binarySearch = new BinarySearch();
+        int[] array = {6,13,14,25,33,43,51,53,64,72,84,93,95,97,99};
+        System.out.println(binarySearch.binarySeachIndex(array, 1));
     }
 }
