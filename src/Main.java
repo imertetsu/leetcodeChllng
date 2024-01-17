@@ -91,6 +91,6 @@ public class Main {
 
         BinarySearch binarySearch = new BinarySearch();
         int[] array = {6,13,14,25,33,43,51,53,64,72,84,93,95,97,99};
-        System.out.println(binarySearch.binarySeachIndex(array, 1));
+        System.out.println(binarySearch.binarySeachIndex(array, 53));
     }
 }

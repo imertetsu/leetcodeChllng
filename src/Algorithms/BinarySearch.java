@@ -14,8 +14,7 @@ public class BinarySearch {
                 lo = mid +1;
             if (key == array[mid])
                 return mid;
-            else return -1;
         }
-        return mid;
+        return -1;
     }
 }
