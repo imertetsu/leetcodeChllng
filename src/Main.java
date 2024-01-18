@@ -92,5 +92,9 @@ public class Main {
         BinarySearch binarySearch = new BinarySearch();
         int[] array = {6,13,14,25,33,43,51,53,64,72,84,93,95,97,99};
         System.out.println(binarySearch.binarySeachIndex(array, 53));
+
+        OrderLikeDictionary orderLikeDictionary = new OrderLikeDictionary();
+        String[] palabras = {"cono", "conocer", };
+        System.out.println(orderLikeDictionary.isOrdered(palabras));
     }
 }
