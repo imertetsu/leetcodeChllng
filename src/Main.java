@@ -1,6 +1,7 @@
 import Algorithms.BinarySearch;
 import EasyPractices.BestTimeToBuyAndSellStock;
 import EasyPractices.Recursividad;
+import EasyPractices.RomanToInt;
 import EasyPractices.SingleNumber;
 import HardPractices.Candy;
 import Matrix.MinFillingPathSum;
@@ -98,8 +99,10 @@ public class Main {
         String[] palabras = {"cono", "conocer", };
         System.out.println(orderLikeDictionary.isOrdered(palabras));
 
-        MinFillingPathSum minFillingPathSum = new MinFillingPathSum();
-        int[][] matrix = {{2,1,3},{6,5,4}};
-        minFillingPathSum.minFallingPathSum(matrix);
+//        MinFillingPathSum minFillingPathSum = new MinFillingPathSum();
+//        int[][] matrix = {{2,1,3},{6,5,4}};
+//        minFillingPathSum.minFallingPathSum(matrix);
+        RomanToInt romanToInt = new RomanToInt();
+        System.out.println(romanToInt.romanToInt("D"));
     }
 }
