@@ -107,24 +107,19 @@ public class Main {
         RomanToInt romanToInt = new RomanToInt();
         System.out.println(romanToInt.romanToInt("D"));
 
-        LinkedListAddTwoNumbers linkedListAddTwoNumbers = new LinkedListAddTwoNumbers();
+//        LinkedListAddTwoNumbers linkedListAddTwoNumbers = new LinkedListAddTwoNumbers();
+//
+//        ListNode ln = new ListNode(2, new ListNode(4, new ListNode(3)));
+//        ListNode ln2 = new ListNode(5, new ListNode(6, new ListNode(4)));
+//        System.out.println(ln.val);
+//        System.out.println(ln.next.val);
+//        System.out.println(ln.next.next.val);
+//        System.out.println(ln.next.next.next);
+//
+//        linkedListAddTwoNumbers.addTwoNumbers(ln,ln2);
 
-        LinkedList<Integer> l1 = new LinkedList<>();
-        l1.add(2);
-        l1.add(4);
-        l1.add(3);
-        LinkedList<Integer> l2 = new LinkedList<>();
-        l2.add(5);
-        l2.add(6);
-        l2.add(4);
-
-        ListNode ln = new ListNode(2, new ListNode(4, new ListNode(3)));
-        ListNode ln2 = new ListNode(5, new ListNode(6, new ListNode(4)));
-        System.out.println(ln.val);
-        System.out.println(ln.next.val);
-        System.out.println(ln.next.next.val);
-        System.out.println(ln.next.next.next);
-
-        linkedListAddTwoNumbers.addTwoNumbers(ln,ln2);
+        TaskScheduler taskScheduler = new TaskScheduler();
+        char[] tasks = {'A','A','C','B','B','A','C'};
+        System.out.println(taskScheduler.leastInterval(tasks, 2));
     }
 }
