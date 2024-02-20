@@ -6,35 +6,31 @@ import java.util.Map;
 
 public class TaskScheduler {
     public int leastInterval(char[] tasks, int n) {
-        int halfSizeArray = tasks.length / 2;
-        int[] charCount = new int[2];
-        boolean isDoubleHalf = false;
+        if (n == 0) return tasks.length;
+        Map<Character, Integer> taskCounts = new HashMap<>();
+        int maxCount = 0;
+        int numMaxTasks = 0;
 
-        ArrayList<Character> chars = new ArrayList<>();
-        ArrayList<Integer> countChars = new ArrayList<>();
-        chars.add(tasks[0]);
-
-        Map<Character, Integer> charsC = new HashMap<>();
-
-        int count = 1;
-        int result = tasks.length;
-
-
-
-            for (int k = 1; k < tasks.length && n!=0; k++){
-                if(!chars.contains(tasks[k])){
-                    chars.add(tasks[k]);
-                }
-                for (int i = 1; i-1 < tasks.length-1; i++) {
-
-                    if(chars.contains()) {
-                        count = count + 1;
-                    }
-                }
-                countChars.add(count);
-                count = 1;
+        // Count frequencies and find the task with maximum count
+        for (char task : tasks) {
+            taskCounts.put(task, taskCounts.getOrDefault(task, 0) + 1);
+            int count = taskCounts.get(task);
+            if (count > maxCount) {
+                maxCount = count;
+                numMaxTasks = 1;
+            } else if (count == maxCount) {
+                numMaxTasks++;
             }
-        return result;
+        }
+
+        // Calculate the minimum time required
+        int partCount = maxCount - 1;
+        int partLength = n - (numMaxTasks - 1);
+        int emptySlots = partCount * partLength;
+        int availableTasks = tasks.length - maxCount * numMaxTasks;
+        int idleSlots = Math.max(0, emptySlots - availableTasks);
+
+        return tasks.length + idleSlots;
     }
 }
 

@@ -120,6 +120,10 @@ public class Main {
 
         TaskScheduler taskScheduler = new TaskScheduler();
         char[] tasks = {'A','A','C','B','B','A','C'};
-        System.out.println(taskScheduler.leastInterval(tasks, 2));
+        char[] tasks1 = {'A','A','A','A','A','A','B','C','D','E','F','G'};
+        char[] tasks2 = {'A','A'};
+        char[] tasks3 = {'A','A','B','B','A','B'};
+        char[] tasks4 = {'A','B','C'};
+        System.out.println(taskScheduler.leastInterval(tasks3, 50));
     }
 }
