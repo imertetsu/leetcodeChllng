@@ -13,36 +13,29 @@ public class MakeSquareSameColor {
     Return true if it is possible to create a 2 x 2 square of the same color, otherwise, return false.
     */
     public boolean canMakeSquare(char[][] grid) {
-        for (int i = 0; i < grid.length; i++) {
-            for (int j = 0; j < grid[0].length; j++) {
-                // Cambiar el color de la celda grid[i][j]
-                char originalColor = grid[i][j];
-                grid[i][j] = (originalColor == 'W') ? 'B' : 'W';
+        int count = 0;
+        for (int i = 0; i < grid.length - 1; i++ ){
+            for (int j = 0; j < grid[0].length -1; j ++){
 
-                // Verificar si hay un cuadrado de 2x2 del mismo color en la matriz resultante
-                if (hasSameColorSquare(grid)) {
+                if(grid[i][j] == grid[i][j+1]){
+                    count++;
+                }
+                if(grid[i][j] == grid[i+1][j]){
+                    count++;
+                }
+                if(grid[i][j] == grid[i+1][j+1]){
+                    count++;
+                }
+                if(count >= 2 || count == 0){
                     return true;
                 }
-
-                // Restaurar el color original de la celda
-                grid[i][j] = originalColor;
+                count = 0;
             }
         }
+
         return false;
     }
 
-    private boolean hasSameColorSquare(char[][] grid) {
-        for (int i = 0; i < grid.length - 1; i++) {
-            for (int j = 0; j < grid[0].length - 1; j++) {
-                if (grid[i][j] == grid[i][j+1] &&
-                        grid[i][j] == grid[i+1][j] &&
-                        grid[i][j] == grid[i+1][j+1]) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
     public boolean makeSquareList(List<List<Character>> grid){
         grid.forEach(row -> row.forEach(System.out::println));
         return true;
