@@ -2,7 +2,7 @@ package StringManipulation;
 
 public class MaximumNumberOfWordsInSentences {
     public int mostWordsFound(String[] sentences) {
-        int maxNumberFound = maxNumberWordsInString(sentences[0]);
+        int maxNumberFound = 0;
         for (int i = 0; i < sentences.length; i++) {
             if(maxNumberFound < maxNumberWordsInString(sentences[i])){
                 maxNumberFound = maxNumberWordsInString(sentences[i]);
