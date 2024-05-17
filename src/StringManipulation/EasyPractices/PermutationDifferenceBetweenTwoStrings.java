@@ -1,4 +1,4 @@
-package StringManipulation;
+package StringManipulation.EasyPractices;
 
 public class PermutationDifferenceBetweenTwoStrings {
     /*
@@ -39,6 +39,16 @@ public class PermutationDifferenceBetweenTwoStrings {
         }
         return 0;
     }
+
+    /*
+    public int findPermutationDifference(String s, String t) {
+        int result = 0;
+        for (int i = 0; i < s.length(); i++) {
+            result += Math.abs(i - t.indexOf(s.charAt(i)));
+        }
+        return result;
+    }
+     */
 
     public static void main(String[] args) {
         String s = "abcde";

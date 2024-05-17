@@ -1,4 +1,4 @@
-package StringManipulation;
+package StringManipulation.EasyPractices;
 
 public class ScoreOfString {
     /*
