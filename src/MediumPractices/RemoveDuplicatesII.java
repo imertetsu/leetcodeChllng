@@ -31,4 +31,11 @@ public class RemoveDuplicatesII {
         System.out.println("ArrayList " + list);
         return list.size();
     }
+
+    public static void main(String[] args) {
+
+        TaskScheduler taskScheduler = new TaskScheduler();
+        System.out.println(taskScheduler.nice);
+        System.out.println(taskScheduler.nice1);
+    }
 }

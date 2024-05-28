@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TaskScheduler {
+    public int nice = 1;
+    int nice1 = 2;
+
     public int leastInterval(char[] tasks, int n) {
         if (n == 0) return tasks.length;
         Map<Character, Integer> taskCounts = new HashMap<>();
